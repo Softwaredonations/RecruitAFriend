@@ -1,0 +1,3 @@
+C:\Users\Paul\Documents\Honorbuddy\Plugins\RecruitAFriend\obj\Debug\RecruitAFriend.csprojResolveAssemblyReference.cache
+C:\Users\Paul\Documents\Honorbuddy\Plugins\RecruitAFriend\obj\Debug\RecruitAFriend.RecruitAFriendSettings.resources
+C:\Users\Paul\Documents\Honorbuddy\Plugins\RecruitAFriend\obj\Debug\RecruitAFriend.csproj.GenerateResource.Cache

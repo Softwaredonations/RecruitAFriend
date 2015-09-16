@@ -11,6 +11,10 @@ using Styx.Common;
 using Styx.Plugins;
 using Styx.WoWInternals;
 using Styx.WoWInternals.WoWObjects;
+using Styx.CommonBot;
+using Styx.Helpers;
+using Styx.CommonBot.Profiles;
+using Styx.CommonBot.Inventory;
 using System.Threading.Tasks;
 
 namespace RecruitAFriend
@@ -274,7 +278,7 @@ namespace RecruitAFriend
                                 Logging.Write( " - All members are within range.");
                                 Logging.Write( " - Waiting 8 seconds before turning in the quest.");
                                 inRange = 0;
-                                //Thread.Sleep(8000);
+                             
                                 await Task.Delay(8000);
                                 //Will turn in quest here if all arguments are passed.
                             }
@@ -311,10 +315,12 @@ namespace RecruitAFriend
                         int waitTime = rng.Next(5, 8);
                         Logging.Write(" - I am in a " + waitTime.ToString() + " seconds wait period.");
                         WoWMovement.MoveStop();
-                        Me.ClearTarget();
-                        this.Thread.Sleep(8000);
-                        //await Task.Delay(waitTime * 10000);
-                        
+                                             
+                   
+                        if (TreeRoot.IsRunning) TreeRoot.Pause();
+                        await Task.Delay(waitTime * 10000);
+                        if (!TreeRoot.IsRunning) TreeRoot.Resume();
+
 
                         if (Me.PartyMembers.Count(player => player != null && player.IsValid && player.CurrentTarget == lastQGtarget && lastQGtarget != null) > 0)
                         {
@@ -370,11 +376,11 @@ namespace RecruitAFriend
 
         public static String Leader
         {
-            get { return "Ilylul"; }
+            get { return "Ilylilu"; }
         }
         public static String Toon
         {
-            get { return "Ilylilu"; }
+            get { return "Ilyluli"; }
         }
 
 
@@ -663,14 +669,16 @@ namespace RecruitAFriend
     // ******************************
     public class Settings
     {
-        public static void Save()
+
+
+        public static void Save(String L, String F)
         {
 
         }
 
         public static void Load()
         {
-
+          
         }
     }
 }

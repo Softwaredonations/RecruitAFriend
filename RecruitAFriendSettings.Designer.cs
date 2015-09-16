@@ -32,10 +32,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabGeneral = new System.Windows.Forms.TabPage();
             this.groupBoxAccept = new System.Windows.Forms.GroupBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.radioAcceptSpecificCharacters = new System.Windows.Forms.RadioButton();
-            this.radioAcceptEveryone = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -44,16 +40,19 @@
             this.radioShareMountYes = new System.Windows.Forms.RadioButton();
             this.radioShareMountNo = new System.Windows.Forms.RadioButton();
             this.tabCommands = new System.Windows.Forms.TabPage();
-            this.tabQuestBlacklisting = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.numericUpDownGrantLevels = new System.Windows.Forms.NumericUpDown();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.tabQuestBlacklisting = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.LeaderTB = new System.Windows.Forms.TextBox();
+            this.FollowerTB = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -84,8 +83,8 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.button1);
             this.splitContainer1.Panel2MinSize = 50;
-            this.splitContainer1.Size = new System.Drawing.Size(688, 436);
-            this.splitContainer1.SplitterDistance = 367;
+            this.splitContainer1.Size = new System.Drawing.Size(418, 227);
+            this.splitContainer1.SplitterDistance = 176;
             this.splitContainer1.SplitterWidth = 1;
             this.splitContainer1.TabIndex = 2;
             this.splitContainer1.TabStop = false;
@@ -100,83 +99,41 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(688, 367);
+            this.tabControl1.Size = new System.Drawing.Size(418, 176);
             this.tabControl1.TabIndex = 1;
             // 
             // tabGeneral
             // 
-            this.tabGeneral.Controls.Add(this.checkBox8);
             this.tabGeneral.Controls.Add(this.groupBoxAccept);
-            this.tabGeneral.Controls.Add(this.label1);
             this.tabGeneral.Controls.Add(this.checkBox3);
             this.tabGeneral.Controls.Add(this.checkBox2);
             this.tabGeneral.Controls.Add(this.checkBox1);
             this.tabGeneral.Location = new System.Drawing.Point(4, 22);
             this.tabGeneral.Name = "tabGeneral";
             this.tabGeneral.Padding = new System.Windows.Forms.Padding(3);
-            this.tabGeneral.Size = new System.Drawing.Size(680, 341);
+            this.tabGeneral.Size = new System.Drawing.Size(410, 150);
             this.tabGeneral.TabIndex = 0;
             this.tabGeneral.Text = "General";
             this.tabGeneral.UseVisualStyleBackColor = true;
             // 
             // groupBoxAccept
             // 
-            this.groupBoxAccept.Controls.Add(this.checkedListBox1);
-            this.groupBoxAccept.Controls.Add(this.radioAcceptSpecificCharacters);
-            this.groupBoxAccept.Controls.Add(this.radioAcceptEveryone);
-            this.groupBoxAccept.Location = new System.Drawing.Point(344, 6);
+            this.groupBoxAccept.Controls.Add(this.FollowerTB);
+            this.groupBoxAccept.Controls.Add(this.LeaderTB);
+            this.groupBoxAccept.Controls.Add(this.label2);
+            this.groupBoxAccept.Controls.Add(this.label1);
+            this.groupBoxAccept.Location = new System.Drawing.Point(272, 6);
             this.groupBoxAccept.Name = "groupBoxAccept";
-            this.groupBoxAccept.Size = new System.Drawing.Size(325, 311);
+            this.groupBoxAccept.Size = new System.Drawing.Size(128, 126);
             this.groupBoxAccept.TabIndex = 6;
             this.groupBoxAccept.TabStop = false;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(17, 92);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(293, 199);
-            this.checkedListBox1.TabIndex = 6;
-            // 
-            // radioAcceptSpecificCharacters
-            // 
-            this.radioAcceptSpecificCharacters.AutoSize = true;
-            this.radioAcceptSpecificCharacters.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioAcceptSpecificCharacters.Location = new System.Drawing.Point(22, 65);
-            this.radioAcceptSpecificCharacters.Name = "radioAcceptSpecificCharacters";
-            this.radioAcceptSpecificCharacters.Size = new System.Drawing.Size(148, 21);
-            this.radioAcceptSpecificCharacters.TabIndex = 3;
-            this.radioAcceptSpecificCharacters.TabStop = true;
-            this.radioAcceptSpecificCharacters.Text = "Specific Characters";
-            this.radioAcceptSpecificCharacters.UseVisualStyleBackColor = true;
-            // 
-            // radioAcceptEveryone
-            // 
-            this.radioAcceptEveryone.AutoSize = true;
-            this.radioAcceptEveryone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioAcceptEveryone.Location = new System.Drawing.Point(22, 36);
-            this.radioAcceptEveryone.Name = "radioAcceptEveryone";
-            this.radioAcceptEveryone.Size = new System.Drawing.Size(86, 21);
-            this.radioAcceptEveryone.TabIndex = 2;
-            this.radioAcceptEveryone.TabStop = true;
-            this.radioAcceptEveryone.Text = "Everyone";
-            this.radioAcceptEveryone.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(249, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "... from ...";
+            this.groupBoxAccept.Enter += new System.EventHandler(this.groupBoxAccept_Enter);
             // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(26, 97);
+            this.checkBox3.Location = new System.Drawing.Point(17, 20);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(174, 21);
             this.checkBox3.TabIndex = 2;
@@ -187,7 +144,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(26, 63);
+            this.checkBox2.Location = new System.Drawing.Point(17, 47);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(136, 21);
             this.checkBox2.TabIndex = 1;
@@ -198,7 +155,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(26, 31);
+            this.checkBox1.Location = new System.Drawing.Point(20, 111);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(171, 21);
             this.checkBox1.TabIndex = 0;
@@ -260,37 +217,6 @@
             this.tabCommands.Text = "Commands";
             this.tabCommands.UseVisualStyleBackColor = true;
             // 
-            // tabQuestBlacklisting
-            // 
-            this.tabQuestBlacklisting.Location = new System.Drawing.Point(4, 22);
-            this.tabQuestBlacklisting.Name = "tabQuestBlacklisting";
-            this.tabQuestBlacklisting.Size = new System.Drawing.Size(680, 341);
-            this.tabQuestBlacklisting.TabIndex = 3;
-            this.tabQuestBlacklisting.Text = "Quest Blacklisting";
-            this.tabQuestBlacklisting.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(518, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 35);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Save Settings";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(17, 218);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(213, 35);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Execute";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.checkBox7);
@@ -302,6 +228,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(213, 190);
             this.panel1.TabIndex = 5;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox7.Location = new System.Drawing.Point(15, 117);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(139, 21);
+            this.checkBox7.TabIndex = 8;
+            this.checkBox7.Text = "Divide Bag Space";
+            this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // numericUpDownGrantLevels
             // 
@@ -352,33 +289,75 @@
             this.checkBox4.Text = "Invite to Party";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // button2
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.Location = new System.Drawing.Point(15, 117);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(139, 21);
-            this.checkBox7.TabIndex = 8;
-            this.checkBox7.Text = "Divide Bag Space";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(17, 218);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(213, 35);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Execute";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // tabQuestBlacklisting
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.Location = new System.Drawing.Point(26, 129);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(139, 21);
-            this.checkBox8.TabIndex = 9;
-            this.checkBox8.Text = "Divide Bag Space";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.tabQuestBlacklisting.Location = new System.Drawing.Point(4, 22);
+            this.tabQuestBlacklisting.Name = "tabQuestBlacklisting";
+            this.tabQuestBlacklisting.Size = new System.Drawing.Size(680, 341);
+            this.tabQuestBlacklisting.TabIndex = 3;
+            this.tabQuestBlacklisting.Text = "Quest Blacklisting";
+            this.tabQuestBlacklisting.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(248, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(155, 35);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Save Settings";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Friend";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Leader";
+            // 
+            // LeaderTB
+            // 
+            this.LeaderTB.Location = new System.Drawing.Point(6, 42);
+            this.LeaderTB.Name = "LeaderTB";
+            this.LeaderTB.Size = new System.Drawing.Size(110, 20);
+            this.LeaderTB.TabIndex = 7;
+            // 
+            // FollowerTB
+            // 
+            this.FollowerTB.Location = new System.Drawing.Point(6, 86);
+            this.FollowerTB.Name = "FollowerTB";
+            this.FollowerTB.Size = new System.Drawing.Size(110, 20);
+            this.FollowerTB.TabIndex = 8;
             // 
             // RecruitAFriendSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(688, 436);
+            this.ClientSize = new System.Drawing.Size(418, 227);
             this.Controls.Add(this.splitContainer1);
             this.Name = "RecruitAFriendSettings";
             this.Text = "RecruitAFriendSettings";
@@ -413,10 +392,6 @@
         private System.Windows.Forms.TabPage tabCommands;
         private System.Windows.Forms.TabPage tabQuestBlacklisting;
         private System.Windows.Forms.GroupBox groupBoxAccept;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.RadioButton radioAcceptSpecificCharacters;
-        private System.Windows.Forms.RadioButton radioAcceptEveryone;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
@@ -429,8 +404,10 @@
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.CheckBox checkBox8;
         private System.Windows.Forms.CheckBox checkBox7;
-
+        private System.Windows.Forms.TextBox FollowerTB;
+        private System.Windows.Forms.TextBox LeaderTB;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

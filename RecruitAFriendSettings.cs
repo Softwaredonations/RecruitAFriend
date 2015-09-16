@@ -15,6 +15,7 @@ namespace RecruitAFriend
         public RecruitAFriendSettings()
         {
             InitializeComponent();
+         
         }
 
         private void RecruitAFriendSettings_Load(object sender, EventArgs e)
@@ -24,7 +25,17 @@ namespace RecruitAFriend
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Settings.Save();
+         
+        }
+
+        private void groupBoxAccept_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+         
         }
     }
 }
