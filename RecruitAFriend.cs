@@ -318,7 +318,7 @@ namespace RecruitAFriend
                                              
                    
                         if (TreeRoot.IsRunning) TreeRoot.Pause();
-                        await Task.Delay(waitTime * 10000);
+                        await Task.Delay(waitTime * 1000);
                         if (!TreeRoot.IsRunning) TreeRoot.Resume();
 
 
@@ -376,11 +376,11 @@ namespace RecruitAFriend
 
         public static String Leader
         {
-            get { return "Ilylilu"; }
+            get { return "Ilyluli"; }
         }
         public static String Toon
         {
-            get { return "Ilyluli"; }
+            get { return "Ilylilu"; }
         }
 
 
@@ -449,7 +449,7 @@ namespace RecruitAFriend
              //   Lua.DoString("QuestLogPushQuest()");
            // }
             Logging.Write("[RAF Edit] ab");
-            
+            Lua.DoString("QuestLogPushQuest()");
             Functions.AcceptQuest();
             Functions.DeclineQuest();
         }
@@ -671,7 +671,7 @@ namespace RecruitAFriend
     {
 
 
-        public static void Save(String L, String F)
+        public static void Save()
         {
 
         }
